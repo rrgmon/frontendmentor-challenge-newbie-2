@@ -1,0 +1,143 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  min-height: 100%;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.sedans-container {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.suvs-container {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-container {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 1rem 1rem;
+}
+
+.sedans-container,
+.suvs-container,
+.luxury-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-grow: 1;
+  padding: 2rem 3rem;
+  flex-wrap: wrap;
+}
+
+.img img {
+  width: 5rem;
+  padding-bottom: 2rem;
+}
+
+.text h2 {
+  font-size: 3rem;
+  font-family: 'Big Shoulders Display', cursive;
+  color: hsl(0, 0%, 95%);
+  padding-bottom: 2rem;
+  font-weight: 700;
+}
+
+.text p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsla(0, 0%, 100%, 0.5);
+  padding-bottom: 2rem;
+  font-weight: 400;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1.4rem;
+}
+
+.btn:hover {
+  box-shadow: 0.12rem 0.23rem 1rem 0.12rem hsla(0, 0%, 33%, 0.534);
+  cursor: pointer;
+}
+
+.sedans-container .btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs-container .btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury-container .btn {
+  color: hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .sedans-container,
+  .suvs-container,
+  .luxury-container {
+    height: 50rem;
+    max-width: 30rem;
+  }
+
+  .sedans-container {
+    border-radius: 0 0 0 0;
+  }
+
+  .luxury-container {
+    border-radius: 0 0 0 0;
+  }
+
+  .img img {
+    width: 7rem;
+  }
+  .text h2 {
+    font-size: 4rem;
+  }
+
+  .text p {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+  }
+}
