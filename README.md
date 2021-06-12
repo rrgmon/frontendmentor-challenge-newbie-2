@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/rrgmon/frontendmentor-challenge-newbie-2)
-- Live Site URL: [Add live site URL here](https://rrgmon.dev/frontendmentor-challenge-newbie-2/)
+- Solution URL: [Github](https://github.com/rrgmon/frontendmentor-challenge-newbie-2)
+- Live Site URL: [Live Site](https://rrgmon.dev/frontendmentor-challenge-newbie-2/)
 
 ## My process
 
